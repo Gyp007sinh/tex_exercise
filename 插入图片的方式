@@ -1,0 +1,27 @@
+\textbf{\emph{\underline{{\large 这是一张Latex的图片}}}}
+			% 使文字在图片上方
+			% 标题在下方
+			\begin{figure}[htbp] % latex中的table\figure环境视为一种浮动体
+				% h:当前位置 t:顶部 b:底部 p:单独成页
+				\centering\includegraphics[scale=0.3]{latex.jpg} % 插入图片
+				% [scale=*]为可选参数，用于放缩图片的大小
+				\caption{\LaTeX 入门}
+			\end{figure}
+      
+      
+      \textbf{\emph{\underline{{\large 这是微积分的图片}}}}\\
+		\begin{figure}[htbp]
+			\includegraphics[scale=0.22]{latex.jpg}\quad
+			%\caption{Latex}
+			\includegraphics[scale=0.2]{jifen}\quad
+			%\caption{微分的几何意义}
+			\includegraphics[scale=0.22]{newton}
+			%\caption{牛顿莱布尼茨公式}
+			
+			\caption{微积分的产生}\label{p1}
+		\end{figure}
+		微分，积分开始，"化直为曲，以直代曲"
+		\begin{quote}
+			注:微积分的产生与发展对社会生活的方方面面产生重大影响...\\
+			如图\ref{p1}所示,可以看出微分的几何意义与微、积分两者的联系.
+		\end{quote}
