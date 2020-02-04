@@ -1,0 +1,12 @@
+\textbf{\emph{\underline{{\Large 这是一份课程表}}}}\\
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				\multicolumn{6}{|c|}{\textbf{{\large 课程表}}}\\
+				\hline
+				&Mon&Teu&Wen&Thr&Fri\\
+				\hline
+				\textit{课程}&Chinese&\emph{Math}&Phi&Geo&Math\\
+				\hline
+			\end{tabular}
+			\\
+			注:这是周一至周五的课表...
