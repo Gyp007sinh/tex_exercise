@@ -1,0 +1,16 @@
+\textbf{\underline{{\large 数学专业的方向}}}
+		% \item[]中可选参数(符号)
+		% 最多镶嵌四层\item
+		
+		% {itemize}为无序  {enumerate}为有序
+		\begin{itemize}
+			\item 基础数学
+			\begin{enumerate}
+				\item[a] 分析学
+				\item[b] 代数学
+				\item[c] 几何学
+			\end{enumerate}
+			\item 应用数学
+			\item 计算数学
+			\item 其他\\...
+		\end{itemize}
