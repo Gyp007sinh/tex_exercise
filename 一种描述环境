@@ -1,0 +1,11 @@
+\textbf{\emph{\underline{{\Large 微积分发展史上的一些重要人物}}}}
+		
+		% {description}一种特殊的描述环境
+		\begin{description}
+			\item[费马] 研究函数极值问题引入导数
+			\item[牛顿] 牛顿研究物理问题的速度
+			\item[莱布尼茨] 研究几何问题的切线方向
+			\item[黎曼] 一种积分的重要形式,黎曼和
+			\item[达朗贝格] 其他不同形式积分\\
+			...
+		\end{description}
