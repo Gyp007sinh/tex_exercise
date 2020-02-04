@@ -1,0 +1,18 @@
+% \textbf{\emph{{\small 以下是三线表的制作}:}}
+		\begin{table}[htbp!]
+			\textbf{\emph{{\small 以下是三线表的制作}:}} \\
+			\centering
+			\begin{tabular}[t]{ccc}
+				\toprule
+				\multicolumn{3}{c}{\textbf{\emph{课程表}}} \\
+				\midrule
+				\textbf{周一}&数学分析&高等代数 \\
+				\textbf{周二}&概率论&实变函数 \\
+				\bottomrule
+			\end{tabular}
+			\caption{三线表} \label{123}
+			注:三线表在科技论文中较常用. 
+			\begin{flushleft}
+				表\ref{123}中数据说明了...
+			\end{flushleft}
+		\end{table}
