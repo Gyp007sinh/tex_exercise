@@ -5,6 +5,7 @@
 
 \usepackage{fancyhdr} % 页眉页脚
 \usepackage{lastpage} % 获得总页数
+\usepackage{array} % 引入宏包，可对整列单元格进行修改
 
 \usepackage{multicol} % 从某个地方开始双栏的宏包
 % 插入图片的宏包
@@ -39,7 +40,7 @@
 	\maketitle
 	
 	% 若中间竖线分割，可使用
-	\columnseprule=1pt
+	% \columnseprule=1pt
 	
 	% 另一种写入摘要的环境
 	\begin{onecolabstract}  
@@ -63,11 +64,33 @@
 		\tableofcontents % 目录适用于\section{}命令
 		
 		\section{title1}
-		我国的彭实戈教授在这方面做出了卓越贡献，他建立了动态非线性数学期望理论:g-期望理论。g-期望是研究金融数学的非线性动态定价问题以及动态风险度量问题的重要工具。受风险度量和金融中随机波动性问题的启发，彭教授又引入了另一类非线性期望:G-期望，并进一步由他本人将所创立的这两种非线性期望理论应用到实际金融市场中。
+		我国的彭实戈教授在这方面做出了卓越贡献，他建立了动态非线性数学期望理论:g-期望理论。
+			\subsection{title1.1}“化曲为直，以值代曲”
+			\textbf{\emph{\underline{{\Large 可以写表格}}}}
+			
+			\subsection{title1.2}分割、近似、求和and取极限
+			\textbf{\underline{{\large 三线表}}}
+			
+			\subsection{title1.3}
+			一种特殊的描述环境
 		\section{title2}
-		非线性数学期望的理论研究可追溯到20世纪 50 年代。1954年，法国的数学家邵盖提出了容度的概念，并且利用这概念定义了一种现在被称为Choquet-积分的非线性积分，它定义的期望就是一种非线性数学期望。这一理论目前在金融学以及经济学中得到了广泛的应用。70年代以来，这一理论被推广为非可加测度和非线性数学期望理论。特别是近十几年来，非可加测度以及非线性积分理论的研究在学术上取得了一系列的成果。
+		非线性数学期望的理论研究可追溯到20世纪 50 年代。
+			\subsection{title2.1}
+			牛顿研究物理问题的速度
+			\subsection{title2.2}
+			研究几何问题的切线方向
+			\subsection{title2.3}
+			一种积分的重要形式,黎曼和
 		\section{title3}
-		长期以来人们认为，倒向随机微分方程是不可解的。所以当彭实戈和法国数学家巴赫杜在1990年提出一大类倒向随机微分方程也能求解时，不仅在随机分析界，而且在金融数学界也引起了不小的反响。
+		长期以来人们认为，倒向随机微分方程是不可解的。
+			\subsection{title3.1}
+			以下是三线表的制作
+			\subsection{title3.2}
+			数学分析
+			\subsection{title3.3}
+			三线表在科技论文中较常用
+		\section{ending}
+		作为结语
 	\end{multicols}
 	
 \end{document}
