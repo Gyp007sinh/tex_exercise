@@ -1,0 +1,73 @@
+% 这是双栏的论文格式
+\documentclass{article}
+% \documentclass[twocolumn]{article}
+\usepackage[UTF8]{ctex}
+
+\usepackage{fancyhdr} % 页眉页脚
+\usepackage{lastpage} % 获得总页数
+
+\usepackage{multicol} % 从某个地方开始双栏的宏包
+% 插入图片的宏包
+\usepackage{graphicx} % 插入图片的宏包
+\graphicspath{{pic/}} % 在于.tex同级的目录下创建名为pic的文件夹，存放图片
+
+\raggedright % 防止右边界越界
+% 首行缩进两格
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+% 自定义页眉页脚
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.1]{xiamen}} % 设置宽度等
+%\chead{这是我的专用页眉}
+\chead{\includegraphics[scale=0.1]{xiaoxun}}
+%\rhead{\bfseries 右边页眉}
+\rhead{\includegraphics[scale=0.1]{xueyuan}}
+% \lfoot{页脚左边} \rfoot{右边页脚}
+\cfoot{\thepage}
+
+% 封面可放在导言区
+\title{\textbf{\emph{这里填入标题}}} %标题
+\author{\underline{这是作者}} %作者
+\date{\textit{\today}} %当前日期
+
+\usepackage{abstract} % 一种有用的摘要宏包
+\renewcommand{\abstractname}{} % 取消原来居中的“摘要”
+
+% 正文区
+\begin{document}
+	\maketitle
+	
+	% 若中间竖线分割，可使用
+	\columnseprule=1pt
+	
+	% 另一种写入摘要的环境
+	\begin{onecolabstract}  
+		
+		% \noindent{} 表示其后文字不缩进
+		% \noindent{}摘要 表示“摘要”不缩进
+		\noindent{}\textbf{{\large 摘要:}} % 可以\\换行
+		柯尔莫哥洛夫公理化结构给出的公理少而且非常简单和直观，但却在此基础上建立起了概率论的“宏伟大厦”。由这些可引申出经典的数学期望，这些公理对于科学及社会的进步产生了巨大的推动作用，但还有一种同样重要的称作为非线性数学期望的一种期望。	
+		% \newline生成一行
+		\newline
+		% \centerline 该命令可以居中一行文本..
+		\textbf{关键字：}摘要;\LaTeX;中文
+		\newline
+		\textbf{中文分类号:C666} \qquad \textbf{文献标识码:A} \qquad \textbf{文章标识号:23273-2312}
+		
+	\end{onecolabstract}
+
+	% 开始分栏
+	\begin{multicols}{2}
+		
+		\tableofcontents % 目录适用于\section{}命令
+		
+		\section{title1}
+		我国的彭实戈教授在这方面做出了卓越贡献，他建立了动态非线性数学期望理论:g-期望理论。g-期望是研究金融数学的非线性动态定价问题以及动态风险度量问题的重要工具。受风险度量和金融中随机波动性问题的启发，彭教授又引入了另一类非线性期望:G-期望，并进一步由他本人将所创立的这两种非线性期望理论应用到实际金融市场中。
+		\section{title2}
+		非线性数学期望的理论研究可追溯到20世纪 50 年代。1954年，法国的数学家邵盖提出了容度的概念，并且利用这概念定义了一种现在被称为Choquet-积分的非线性积分，它定义的期望就是一种非线性数学期望。这一理论目前在金融学以及经济学中得到了广泛的应用。70年代以来，这一理论被推广为非可加测度和非线性数学期望理论。特别是近十几年来，非可加测度以及非线性积分理论的研究在学术上取得了一系列的成果。
+		\section{title3}
+		长期以来人们认为，倒向随机微分方程是不可解的。所以当彭实戈和法国数学家巴赫杜在1990年提出一大类倒向随机微分方程也能求解时，不仅在随机分析界，而且在金融数学界也引起了不小的反响。
+	\end{multicols}
+	
+\end{document}
