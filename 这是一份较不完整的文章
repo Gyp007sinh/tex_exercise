@@ -1,0 +1,197 @@
+%\documentclass[UTF8]{ctexart}
+%这是导言区，可用来引入各种宏包
+
+\documentclass[twocolumn]{article} %双栏排版
+\usepackage[UTF8]{ctex}
+\usepackage{multicol}
+
+\usepackage{amsmath} % 这是用于数学公式编辑的宏包
+\usepackage{fancyhdr} % 页眉页脚
+\usepackage{lastpage} % 获得总页数
+\usepackage{array} % 引入宏包，可对整列单元格进行修改
+\usepackage{booktabs} % 三线表
+
+\raggedright % 防止右边越界
+% 首行缩进
+\usepackage{indentfirst}
+\setlength{\parindent}{2em} % 缩进两格
+
+% 插入图片的宏包
+\usepackage{graphicx}
+\graphicspath{{pic/}} % 在于.tex同级的目录下创建名为pic的文件夹
+
+% 自定义页眉页脚
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=0.1]{xiamen}}
+%\chead{这是我的专用页眉}
+\chead{\includegraphics[scale=0.1]{xiaoxun}}
+%\rhead{\bfseries 右边页眉}
+\rhead{\includegraphics[scale=0.1]{xueyuan}}
+% \lfoot{页脚左边} \rfoot{右边页脚}
+\cfoot{\thepage}
+
+% 设置无序列表全局符号
+% \renewcommand{\labelitemi}{*}
+
+% 封面可放在导言区
+\title{\textbf{\emph{微积分发展简史}}} %标题
+\author{\underline{Gyp007sinh}} %作者
+\date{\textit{\today}} %当前日期
+
+\begin{document}
+	% 这是正文区，可用来编写文档
+	
+	% 可用\centering 实现文本对齐,\raggedleft 右对齐,\raggedright 左对齐
+	% 这是局部对齐方式
+	% \begin{flushleft}
+    % \end{flushleft}
+    
+    % 这是加竖线
+    % \columnseprule=1pt
+	
+	
+	\maketitle %此处生成封面
+	% 可用(\newpage)生成新页
+	
+	
+	\begin{abstract} % 摘要
+		As is known to all,微积分有着悠久的发展历史.As is known to all,微积分有着悠久的发展历史
+	\end{abstract}
+
+	
+	\tableofcontents % 生成目录
+	
+		\section{引言}
+		\subsection{引言中的小结论}“化曲为直，以值代曲”
+		
+		\textbf{\emph{\underline{{\Large 数学专业的一些课程}}}}\\
+		% {\bfseries}可将字体加粗
+		% {|l|c|r|}表示表格的列数,l、c、r表示左、中、右
+		\begin{tabular}{|>{\bfseries}c|c<{@}|>{*}c|}
+			% c<{@}表示这列后加字符@
+			% >{*}c表示这列前加字符*
+			% &表示一列之间的分割
+			\hline % 这是一行的分割横线
+			数学分析&高等代数&解析几何\\
+			\hline
+			常微分方程&概率论&数理统计\\
+			\hline
+			复变函数&实变函数&泛函分析\\
+			\hline
+		\end{tabular}	
+		\\
+		% \\表示换行
+		注:本科课程...
+		
+		\subsection{写在前面的话}分割、近似、求和and取极限\\
+		\textbf{\underline{{\large 数学专业的方向}}}
+		% \item[]中可选参数(符号)
+		% 最多镶嵌四层\item
+		
+		% {itemize}为无序  {enumerate}为有序
+		\begin{itemize}
+			\item 基础数学
+			\begin{enumerate}
+				\item[a] 分析学
+				\item[b] 代数学
+				\item[c] 几何学
+			\end{enumerate}
+			\item 应用数学
+			\item 计算数学
+			\item 其他\\...
+		\end{itemize}
+		\section{微积分的产生}
+		\subsection{历史原因}
+		
+		\textbf{\emph{\underline{{\Large 微积分发展史上的一些重要人物}}}}
+		
+		% {description}一种特殊的描述环境
+		\begin{description}
+			\item[费马] 研究函数极值问题引入导数
+			\item[牛顿] 牛顿研究物理问题的速度
+			\item[莱布尼茨] 研究几何问题的切线方向
+			\item[黎曼] 一种积分的重要形式,黎曼和
+			\item[达朗贝格] 其他不同形式积分\\
+			...
+		\end{description}
+		
+		% \textbf{\emph{{\small 以下是三线表的制作}:}}
+		\begin{table}[htbp!]
+			\textbf{\emph{{\small 以下是三线表的制作}:}} \\
+			\centering
+			\begin{tabular}[t]{ccc}
+				\toprule
+				\multicolumn{3}{c}{\textbf{\emph{课程表}}} \\
+				\midrule
+				\textbf{周一}&数学分析&高等代数 \\
+				\textbf{周二}&概率论&实变函数 \\
+				\bottomrule
+			\end{tabular}
+			\caption{三线表} \label{123}
+			注:三线表在科技论文中较常用. 
+			\begin{flushleft}
+				表\ref{123}中数据说明了...
+			\end{flushleft}
+		\end{table}
+		% Hello,\LaTeX. \\
+		
+		\subsection{一般格式}
+		\subsubsection{黎曼和形式的积分}见文献\cite{article1}.
+		
+		\textbf{\emph{\underline{{\Large 这是一份课程表}}}}\\
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{6}{|c|}{\textbf{{\large 课程表}}}\\
+			\hline
+			&Mon&Teu&Wen&Thr&Fri\\
+			\hline
+			\textit{课程}&Chinese&\emph{Math}&Phi&Geo&Math\\
+			\hline
+		\end{tabular}
+		\\
+		注:这是周一至周五的课表...
+		
+		\subsubsection{达布和}从文献\cite{article2}可得出结论.
+		
+		\textbf{\emph{\underline{{\large 这是一张Latex的图片}}}}
+		% 使文字在图片上方
+		% 标题在下方
+		\begin{figure}[htbp] % latex中的table\figure环境视为一种浮动体
+			% h:当前位置 t:顶部 b:底部 p:单独成页
+			\centering\includegraphics[scale=0.3]{latex.jpg} % 插入图片
+			% [scale=*]为可选参数，用于放缩图片的大小
+			\caption{\LaTeX 入门}
+		\end{figure}
+		
+		
+		\section{微积分的应用}
+		\subsection{天体运动}
+		众所周知，天体运动中存在许多有趣的现象...\\
+		
+		\subsection{数学本身}如参考文献\cite[page 13]{article3}可证明上述结论.\\
+		
+		\textbf{\emph{\underline{{\large 这是微积分的图片}}}}\\
+		\begin{figure}[htbp]
+			\includegraphics[scale=0.22]{latex.jpg}\quad
+			%\caption{Latex}
+			\includegraphics[scale=0.2]{jifen}\quad
+			%\caption{微分的几何意义}
+			\includegraphics[scale=0.22]{newton}
+			%\caption{牛顿莱布尼茨公式}
+			
+			\caption{微积分的产生}\label{p1}
+		\end{figure}
+		微分，积分开始，"化直为曲，以直代曲"
+		\begin{quote}
+			注:微积分的产生与发展对社会生活的方方面面产生重大影响...\\
+			如图\ref{p1}所示,可以看出微分的几何意义与微、积分两者的联系.
+		\end{quote}
+		
+		\begin{thebibliography}{99}
+			\bibitem{article1}参考文献1: 数学分析
+			\bibitem{article2}参考文献2: 高等代数
+			\bibitem{article3}参考文献3: 微积分学基本原理
+		\end{thebibliography}
+	
+	
+\end{document}
