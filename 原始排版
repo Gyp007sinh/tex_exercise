@@ -1,4 +1,4 @@
-% 这是双栏的论文格式
+% 这是双栏的格式
 \documentclass{article}
 % \documentclass[twocolumn]{article}
 \usepackage[UTF8]{ctex}
