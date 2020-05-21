@@ -73,3 +73,12 @@ This is a note to tex exercise.
 	
 	
 \end{document}
+
+> helloworld
+
+Use <font color=red>`git status`</font> to list all new or modified files that haven't yet been committed.
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+<img src="http://latex.codecogs.com/gif.latex?\int_{a}^{b}f(x)=F(b)-F(a)" />
