@@ -76,6 +76,10 @@ This is a note to tex exercise.
 
 > helloworld
 
+```python
+import math
+```
+
 Use <font color=red>`git status`</font> to list all new or modified files that haven't yet been committed.
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
